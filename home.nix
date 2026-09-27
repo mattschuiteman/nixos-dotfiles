@@ -32,5 +32,7 @@
     home.packages = with pkgs; [
     emacs
     fastfetch
+    wofi
+    python3
     ];
 }

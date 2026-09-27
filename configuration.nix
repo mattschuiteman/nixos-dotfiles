@@ -39,6 +39,7 @@
         kitty
         emacs
         git
+        gcc
         hyprpaper
         ];
 

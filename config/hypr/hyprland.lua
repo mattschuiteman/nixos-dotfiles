@@ -1,5 +1,5 @@
 local terminal = "foot"
-local fileManager = "dolphin"
+local fileManager = "thunar"
 local menu = "wofi --show drun"
 local reload_waybar = "pkill waybar; waybar &"
 local snip = "snip"
@@ -24,8 +24,8 @@ hl.monitor({
 -- General
 hl.config({
     general = {
-        gaps_in = 2,
-        gaps_out = 2,
+        gaps_in = 0,
+        gaps_out = 0,
         border_size = 1,
         ["col.active_border"] = "rgba(33ccffee)",
         ["col.inactive_border"] = "rgba(595959aa)",
@@ -105,8 +105,6 @@ hl.window_rule({
 -- Keybindings
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-
--- SUPER + M intentionally removed
 
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
